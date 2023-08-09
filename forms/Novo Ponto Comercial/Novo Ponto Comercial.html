@@ -74,7 +74,29 @@
 						<label><input type="checkbox" name="sexta"/>Sex</label>
 						<label><input type="checkbox" name="sabado"/>Sab</label>
 					</div>
-				</div>	
+				</div>
+				<div class="form-group col-md-4">
+					<label>Dias de Funcionamento:</label>
+					<input 
+						type="zoom" 
+						name="usuario_coop" 
+						id="usuario_coop"
+                        data-zoom="{
+										'displayKey':'colleagueName',
+										'datasetId':'colleague',
+										'maximumSelectionLength':'1',
+										'placeholder':'Escolha o usuário',
+										'filterValues':'active,true',
+										'fields':[
+											{
+											'field':'colleagueName',
+											'label':'Nome',
+											'standard':'true'
+											}
+										]
+                		            }"
+                    />
+				</div>
 			</div>
 			<div class="row">
 				<div class="form-group col-md-2">
@@ -100,6 +122,27 @@
 				<div class="form-group col-md-2">
 					<label for="estado">Estado: </label>
 					<input type="text" name="estado" id="estado" class="form-control" />
+				</div>
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label for="informacoes">Informações Adicionais: </label>
+						<textarea rows="5" name="informacoes" id="informacoes" class="form-control"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				<i class="flaticon flaticon-cash icon-md" aria-hidden="true"></i> Financeiro
+			</h3>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="form-group col-md-2">
+					<label for="valor">Valor: </label>
+					<input type="number" name="valor" id="valor" class="form-control" />
 				</div>
 			</div>
 		</div>
