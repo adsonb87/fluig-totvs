@@ -50,6 +50,36 @@
 		</div>
 		<div class="panel-body">
 			<div class="row">
+				<div class="form-group col-md-4">
+					<!--
+					<label>Responsável:</label>
+					<input 
+						type="zoom" 
+						name="responsavel" 
+						id="responsavel"
+                        data-zoom="{
+										'displayKey':'colleagueName',
+										'datasetId':'colleague',
+										'maximumSelectionLength':'1',
+										'placeholder':'Escolha o usuário',
+										'filterValues':'active,true',
+										'fields':[
+											{
+												'field':'colleagueId',
+												'label':'ID'											
+											},{
+												'field':'colleagueName',
+												'label':'Nome',
+												'standard':'true'
+											},{
+												'field':'Login',
+												'label':'Login'												
+												}
+										]
+                		            }"
+                    />
+								-->
+				</div>
 				<div class="form-group col-md-2">
 					<label for="tipoPonto">Tipo do Ponto</label>
 					<div class="radio">
@@ -75,28 +105,7 @@
 						<label><input type="checkbox" name="sabado"/>Sab</label>
 					</div>
 				</div>
-				<div class="form-group col-md-4">
-					<label>Dias de Funcionamento:</label>
-					<input 
-						type="zoom" 
-						name="usuario_coop" 
-						id="usuario_coop"
-                        data-zoom="{
-										'displayKey':'colleagueName',
-										'datasetId':'colleague',
-										'maximumSelectionLength':'1',
-										'placeholder':'Escolha o usuário',
-										'filterValues':'active,true',
-										'fields':[
-											{
-											'field':'colleagueName',
-											'label':'Nome',
-											'standard':'true'
-											}
-										]
-                		            }"
-                    />
-				</div>
+				
 			</div>
 			<div class="row">
 				<div class="form-group col-md-2">
@@ -132,6 +141,53 @@
 			</div>
 		</div>
 	</div>
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				<span class="fluigicon fluigicon-users icon-md"></span> Responsáveis
+			</h3>
+		</div>
+		<div class="panel-body">
+			<table tablename="responsaveisTabela" class="table table-hover">
+				<thead>
+					<tr>
+						<td>Responsáveis</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input 
+							type="zoom" 
+							name="responsavel" 
+							id="responsavel"
+							data-zoom="{
+											'displayKey':'colleagueName',
+											'datasetId':'colleague',
+											'maximumSelectionLength':'1',
+											'placeholder':'Escolha o usuário',
+											'filterValues':'active,true',
+											'fields':[
+												{
+													'field':'colleagueId',
+													'label':'ID'											
+												},{
+													'field':'colleagueName',
+													'label':'Nome',
+													'standard':'true'
+												},{
+													'field':'Login',
+													'label':'Login'												
+													}
+											]
+										}"
+						/></td>
+					</tr>
+				</tbody>
+
+			</table>
+		</div>
+	</div>
+
 	<div class="panel panel-primary">
 		<div class="panel-heading">
 			<h3 class="panel-title">

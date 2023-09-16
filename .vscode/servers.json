@@ -2,13 +2,13 @@
 	"version": "0.0.1",
 	"configurations": [
 		{
-			"id": "auqbxm2ro39ll2kt0am0cqciyjn0px4",
+			"id": "c0mfdkftryflmm414nipklp37vzyjo",
 			"name": "Lab",
 			"host": "lab.fluig.com",
 			"ssl": true,
 			"port": 443,
 			"username": "academy.aluno",
-			"password": "U2FsdGVkX1+HoeXRzbL7et+VxWx742wlFvTdKDkKUAA=",
+			"password": "U2FsdGVkX189Ta8Vl/QxgwyOCAYk+GCqKh8g95pTQaA=",
 			"userCode": "academy.aluno",
 			"confirmExporting": false,
 			"companyId": 1
